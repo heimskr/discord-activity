@@ -14,4 +14,4 @@ clean:
 	rm -f $(shell find src -name '*.o') ./main
 
 test: main
-	./main
+	LD_LIBRARY_PATH=lib/$(shell uname -m) ./main
